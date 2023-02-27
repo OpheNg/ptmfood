@@ -1,1 +1,9 @@
 <h1>Plongee Tek Marseille - Foody !</h1>
+
+<h2>On s'occupe de tout !</h2>
+<p>Commandez votre repas
+  <% if user_signed_in? %>
+    <%= link_to "ICI",dashboard_path, class:"ici" %>
+  <% else %>
+    <%= link_to "ICI",new_user_session_path, class:"ici" %>
+  <% end %> </p>
